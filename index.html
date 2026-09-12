@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yeshilin432 | 异世界入口</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== 开屏页：贤者之塔 ========== -->
+    <div id="splash-screen">
+        <!-- 粒子背景 -->
+        <div class="particles" id="particles"></div>
+
+        <!-- 塔的背景 -->
+        <div class="tower-background">
+            <div class="tower-silhouette"></div>
+            <div class="magic-circles">
+                <div class="magic-circle circle-1"></div>
+                <div class="magic-circle circle-2"></div>
+                <div class="magic-circle circle-3"></div>
+            </div>
+        </div>
+
+        <!-- 自定义背景图（替换图片路径即可） -->
+        <div class="bg-image-layer" id="bgImageLayer">
+            <!-- 当用户提供图片时，通过 JS 设置 background-image -->
+        </div>
+
+        <!-- 进入按钮 -->
+        <div class="enter-btn" id="enterBtn">
+            <span>— 进入主页 —</span>
+            <div class="enter-glow"></div>
+        </div>
+
+    </div>
+
+    <!-- ========== 主页面 ========== -->
+    <main id="main-content" class="hidden">
+        <!-- 导航栏 -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-brand">
+                <span class="brand-icon">⚔</span>
+                <span class="brand-text">yeshilin432</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-section="home">首页</a>
+                <a href="#about" class="nav-link" data-section="about">关于</a>
+                <a href="#projects" class="nav-link" data-section="projects">项目</a>
+                <a href="#blog" class="nav-link" data-section="blog">博客</a>
+                <a href="#contact" class="nav-link" data-section="contact">联系</a>
+            </div>
+            <div class="nav-mobile-btn" id="navMobileBtn">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+
+        <!-- Hero 区域 -->
+        <section id="home" class="section hero-section">
+            <div class="hero-bg-effects">
+                <div class="floating-orb orb-1"></div>
+                <div class="floating-orb orb-2"></div>
+                <div class="floating-orb orb-3"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <!-- 替换为你的头像 -->
+                    <div class="avatar-placeholder">
+                        <img src="images/avatar.jpg" alt="avatar" id="avatarImg"/>
+                    </div>
+                    <div class="avatar-ring"></div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">yeshilin432</span>
+                </h1>
+                <p class="hero-subtitle">AI 探索者</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i> 查看项目
+                    </a>
+                    <a href="#blog" class="btn btn-secondary">
+                        <i class="fas fa-pen-nib"></i> 阅读博客
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- 关于我 -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-decorator">✦</span> 关于我 <span class="title-decorator">✦</span>
+                </h2>
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="card-header">
+                            <i class="fas fa-id-card"></i>
+                            <h3>个人简介</h3>
+                        </div>
+                        <p class="about-text">
+                            一个对 AI 充满热情的学习者，致力于探索人工智能的无限可能。
+                            从 Agent 到工作流，从前端到后端，不断拓展技术边界。
+                        </p>
+                        <div class="about-tags">
+                            <span class="tag">AI Agent</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">产品思维</span>
+                            <span class="tag">全栈开发</span>
+                        </div>
+                    </div>
+                    <div class="about-card glass-card">
+                        <div class="card-header">
+                            <i class="fas fa-code"></i>
+                            <h3>技术栈</h3>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="tech-item">
+                                <div class="tech-icon"><i class="fab fa-python"></i></div>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon"><i class="fab fa-js"></i></div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon"><i class="fab fa-html5"></i></div>
+                                <span>HTML/CSS</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon"><i class="fas fa-robot"></i></div>
+                                <span>AI / LLM</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon"><i class="fas fa-project-diagram"></i></div>
+                                <span>工作流设计</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon"><i class="fab fa-git-alt"></i></div>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目作品集 -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-decorator">✦</span> 项目作品 <span class="title-decorator">✦</span>
+                </h2>
+                <div class="projects-grid">
+                    <!-- 项目 1: ArXiv 论文工作流 -->
+                    <div class="project-card glass-card" data-project="study-hub">
+                        <div class="project-image">
+                            <img src="images/project-arxiv.png" alt="ArXiv论文工作流">
+                            <div class="project-overlay">
+                                <span class="project-link" style="cursor:default;">
+                                    <i class="fas fa-link"></i> Dify 工作流
+                                </span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>ArXiv 论文自动化工作流</h3>
+                            <p class="project-desc">基于 Dify 搭建的 ArXiv 论文自动爬取与推送系统。定时触发→网页爬虫→参数提取→迭代爬取→LLM 提炼→飞书推送，全链路自动化。</p>
+                            <div class="project-tags">
+                                <span class="tag">Dify</span>
+                                <span class="tag">网页爬虫</span>
+                                <span class="tag">自动化</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目 2: Anthropic 新闻工作流 -->
+                    <div class="project-card glass-card" data-project="ai-news">
+                        <div class="project-image">
+                            <img src="images/project-anthropic2.png" alt="Anthropic新闻工作流">
+                            <div class="project-overlay">
+                                <span class="project-link" style="cursor:default;">
+                                    <i class="fas fa-link"></i> Dify 工作流
+                                </span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Anthropic 主页新闻监控</h3>
+                            <p class="project-desc">定时爬取 Anthropic 官网新闻，AI 判断是否有更新，有更新时自动通过 Resend 邮件推送到 QQ 邮箱，实现无人值守的厂商动态监控。</p>
+                            <div class="project-tags">
+                                <span class="tag">Dify</span>
+                                <span class="tag">Resend</span>
+                                <span class="tag">条件分支</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 预留项目位 -->
+                    <div class="project-card glass-card coming-soon">
+                        <div class="project-image">
+                            <img src="images/project-anthropic1.png" alt="Anthropic新闻工作流">
+                        </div>
+                        <div class="project-info">
+                            <h3>Coming Soon...</h3>
+                            <p class="project-desc">更多项目正在开发中，敬请期待 ✨</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 博客区域 -->
+        <section id="blog" class="section blog-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-decorator">✦</span> 博客文章 <span class="title-decorator">✦</span>
+                </h2>
+                <div class="blog-list" id="blogList">
+                    <!-- 博客文章通过 JS 动态渲染 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系 / 页脚 -->
+        <footer id="contact" class="section footer-section">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="https://github.com/yeshilin432" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                    <div class="footer-signature">
+                        <p class="jp-signature">「諦めたら、そこで試合終了だよ。」</p>
+                        <p class="signature-sub">— 安西先生</p>
+                    </div>
+                    <p class="footer-copyright">© 2026 yeshilin432 · Built with passion</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- ========== 博客阅读弹窗 ========== -->
+    <div class="blog-modal hidden" id="blogModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <article class="modal-article" id="modalArticle">
+                <!-- 动态填充 -->
+            </article>
+        </div>
+    </div>
+
+    <!-- ========== 项目图片预览弹窗 ========== -->
+    <div class="image-modal hidden" id="imageModal">
+        <div class="modal-backdrop" id="imageModalBackdrop"></div>
+        <div class="image-modal-content" id="imageModalContent">
+            <button class="modal-close" id="imageModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="项目截图" id="imageModalImg" class="image-modal-img"/>
+            <p class="image-modal-caption" id="imageModalCaption"></p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
